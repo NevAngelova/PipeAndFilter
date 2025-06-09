@@ -105,7 +105,7 @@ public class SinkFilter extends FilterFramework {
     } // run
 
     private void writeOutputToFile(List<ResultData> resultDataList) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("data/OutputA.dat"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("OutputA.dat"))) {
             writer.write(String.format("%-20s %-18s %-15s%n", "Time:", "Temperature (C):", "Altitude (m):"));
             writer.write("-------------------------------------------------------------\n");
 
